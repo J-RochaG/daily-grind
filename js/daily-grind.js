@@ -25,9 +25,21 @@
 
 */
 
+function coffeeTemplate(coffee){
+    return `
+    <p>
+    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
+    <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}
+   </p>
+    `;
+
+}
+
+
 let myDate = new Date(); 
 let myDay = myDate.getDay();
 let today = "";
+let coffee = "";
 
 //console.log(myDay);
 
@@ -41,7 +53,17 @@ switch(myDay){
         today = "Monday";
     break;
 
-
+    case 2:
+        today - "Tuesday";
+        coffee = {
+            pic : "images/bubble-tea.jpg",
+            alt : "A pic of bublle tea",
+            desc : `I like me some bubble tea`,
+            day : "Tuesday",
+            color : "pink",
+            name : "Bubble Tea"
+        };
+    break; 
 
 
     default:
@@ -49,7 +71,7 @@ switch(myDay){
 
 }
 
-let coffee = {
+coffee = {
     pic : "images/bubble-tea.jpg",
     alt : "A pic of bublle tea",
     desc : "I like me some bubble tea",
@@ -58,5 +80,13 @@ let coffee = {
     name : "Bubble Tea"
 };
 
+//let coffeeData = coffeeTemplate(coffee);
+//alert(coffeeData);
+
+//inject coffee data into page
+document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+
+//custom color
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 console.log(coffee);
