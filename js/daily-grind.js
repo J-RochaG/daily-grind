@@ -61,6 +61,7 @@ myDay = parseInt(myDay);
 
 switch(myDay){
 
+        // case 0 is for Sunday and on the day the theme will be caramel latte so the webpage will show a picture of a caramel latte and a baground color of tan.
     case 0:
         today = "Sunday";
         coffee = {
@@ -73,6 +74,7 @@ switch(myDay){
         };
     break;
 
+        // This is for Monday, with a pic of cold brew coffee and have a description of the best cold brew in town.
     case 1:
         today = "Monday";
         coffee = {
@@ -85,6 +87,7 @@ switch(myDay){
         };
     break;
 
+        // This is for the day off Tuesday and it will show bubble tea
     case 2:
         today - "Tuesday";
         coffee = {
@@ -97,6 +100,7 @@ switch(myDay){
         };
     break; 
     
+    // This for Wednesday, this will have a alt description of a pic of drip coffee.
     case 3:
         today - "Wednesday";
         coffee = {
@@ -109,6 +113,7 @@ switch(myDay){
         };
     break; 
 
+        //This is for Thursday
     case 4:
         today - "Thursday";
         coffee = {
@@ -121,6 +126,7 @@ switch(myDay){
         };
     break; 
 
+        // This is for the day of Friday.
     case 5:
         today - "Friday";
         coffee = {
@@ -133,6 +139,7 @@ switch(myDay){
         };
     break; 
 
+        // This for Saturday.
     case 6:
         today - "Saturday";
         coffee = {
